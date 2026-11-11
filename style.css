@@ -1,0 +1,101 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f7f6;
+    color: #333;
+}
+
+header {
+    background-color: #4CAF50; /* Green for Minecraft feel */
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 3em;
+    text-transform: uppercase;
+}
+
+header p {
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+}
+
+/* Disclaimer Style */
+.disclaimer {
+    background-color: #ffdddd; /* Light red/pink for warning */
+    border: 2px solid #cc0000;
+    padding: 15px;
+    text-align: center;
+    font-weight: bold;
+    color: #cc0000;
+    margin-bottom: 30px;
+    border-radius: 5px;
+}
+
+h2 {
+    color: #4CAF50;
+    border-bottom: 2px solid #e0e0e0;
+    padding-bottom: 10px;
+    margin-top: 30px;
+}
+
+.feature-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.feature-item {
+    background-color: #e8f5e9; /* Light green background */
+    padding: 20px;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    flex: 1 1 calc(33% - 40px); /* Three items per row */
+    min-width: 250px;
+    text-align: center;
+}
+
+.feature-item h3 {
+    color: #388e3c;
+    margin-top: 0;
+}
+
+.server-info p {
+    line-height: 1.6;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    background-color: #333;
+    color: white;
+    font-size: 0.9em;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.5em;
+    }
+    .feature-item {
+        flex: 1 1 100%; /* Stack features on smaller screens */
+    }
+}
